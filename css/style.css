@@ -55,6 +55,13 @@ ul a{
 header div{
     text-align: center;
 }
+header li{
+    transition: transform 0.5s ease;
+}
+header li:hover{
+    transform: scale(1.2);
+}
+
 :is(header,main) button{color:black}
 
 main{
@@ -122,12 +129,39 @@ article img{
     max-height:400px;
 }
 #review{
-    display: none;
+    /* display: none; */
+    position: relative;
+    width: 500px;
+    height: 400px;
 }
 .comment{
+    position: absolute;
     background-color: #b1e5e472;
     width: 300px;
     height: 100px;
     border-radius: 7px;
     box-shadow: -5px 0px 0 5px #8ff
+}
+.profile-photo{
+    background-color: #b1e5e4bd;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 200px;
+    top:70px;
+    border: 3px solid #8ff;
+}
+
+.comment:nth-of-type(2){
+    left:100px;
+    top:100px
+}
+.comment:nth-of-type(3){
+    left:10px;
+    top:200px
+}
+
+footer{
+    text-align: center;
 }
