@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    background-image: url(../img/barbeiro1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+body *{
+    color: white;
+}
+header{
+    background-color: #0005;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header>*{
+    width: 200px;
+}
+h1{
+    color:#0000;
+    background-image: url(../img/hbt_logo.png);
+    background-repeat: no-repeat;
+    background-size: 142px 145px;
+    width: 142px;
+    height: 145px;
+    margin-top: 0;
+    margin-right: 0;
+}
+ul{
+    width: 700px;
+    text-align: center;
+}
+ul>*{
+    list-style: none;
+    display: inline-block;
+    margin: 0 18px;
+    padding: 0;
+}
+ul a{
+    text-decoration: none;
+    font-size: 20px;
+}
+header div{
+    text-align: center;
+}
+:is(header,main) button{color:black}
+
+main{
+    min-height: 600px;
+    text-align: center;
+}
+main>button{
+    margin-top: 200px;
+}
+
+
+body>section:has(>img){
+    display: flex;
+    flex-wrap: wrap;
+}
