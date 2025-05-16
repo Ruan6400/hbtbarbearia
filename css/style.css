@@ -11,7 +11,7 @@ body{
 body *{
     color: white;
 }
-header,main,main+h2,h2+section{
+header,main,main+h2,h2+section,#map,h2:has(+table){
     flex-basis: 100%;
 }
 header{
@@ -30,8 +30,12 @@ h1{
     background-size: 142px 145px;
     width: 142px;
     height: 145px;
-    margin-top: 0;
+    margin-top: 10px;
     margin-right: 0;
+    margin-left: 10px;
+}
+h2{
+    text-align: center;
 }
 ul{
     width: 700px;
@@ -81,6 +85,21 @@ section:has(>#flexdiv)>*{
     min-width: 120px;
 }
 #map{
-    width: 500px;
+    max-width: 500px;
+    margin: 0 180px;
     height: 500px;
+}
+table{
+    border-collapse: collapse;
+    margin: 0 20px;
+}
+td{
+    padding: 7px;
+    border-bottom: 2px solid #0cf;
+}
+table td:first-of-type{
+    width: 150px;
+}
+table td:nth-of-type(2){
+    color: #0cf;
 }
