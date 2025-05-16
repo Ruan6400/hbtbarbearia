@@ -11,7 +11,8 @@ body{
 body *{
     color: white;
 }
-header,main,main+h2,h2+section,#map,h2:has(+table){
+header,main,main+h2,h2+section,#map,h2:has(+table)
+,article,footer{
     flex-basis: 100%;
 }
 header{
@@ -89,6 +90,9 @@ section:has(>#flexdiv)>*{
     margin: 0 180px;
     height: 500px;
 }
+h2:has(+table){
+    margin: 50px 0;
+}
 table{
     border-collapse: collapse;
     margin: 0 20px;
@@ -102,4 +106,28 @@ table td:first-of-type{
 }
 table td:nth-of-type(2){
     color: #0cf;
+}
+
+article{
+    margin: 100px 0;
+    display:flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+article p{
+    width: 300px;
+    font-size: 20px;
+}
+article img{
+    max-height:400px;
+}
+#review{
+    display: none;
+}
+.comment{
+    background-color: #b1e5e472;
+    width: 300px;
+    height: 100px;
+    border-radius: 7px;
+    box-shadow: -5px 0px 0 5px #8ff
 }
