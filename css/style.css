@@ -4,10 +4,15 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 body *{
     color: white;
+}
+header,main,main+h2,h2+section{
+    flex-basis: 100%;
 }
 header{
     background-color: #0005;
@@ -54,7 +59,27 @@ main{
 main>button{
     margin-top: 200px;
 }
-
+main+h2{
+    margin: 150px 0;
+}
+#grid,main+h2{
+    text-align: center;
+}
+#grid{
+    margin-bottom: 200px;
+}
+section:has(>#flexdiv)>*{
+    display: inline-block;
+    
+}
+#flexdiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 354px;
+}
+#flexdiv img:first-of-type{
+    min-width: 120px;
+}
 #map{
     width: 500px;
     height: 500px;
