@@ -54,9 +54,3 @@ main{
 main>button{
     margin-top: 200px;
 }
-
-
-body>section:has(>img){
-    display: flex;
-    flex-wrap: wrap;
-}
