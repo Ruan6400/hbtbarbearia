@@ -6,6 +6,7 @@
     <title>HBT Barbearia</title>
     <link href="css/style.css" rel="stylesheet">
     
+    
 </head>
 <body>
     <header>
@@ -35,5 +36,26 @@
         <img src="img/galery/b3.jpg" alt="Imagem 1" width="230">
         <img src="img/galery/b4.jpg" alt="Imagem 1" width="350">
     </section>
+
+    <div id="map">
+
+    </div>
+    <script>
+        function initMap() {
+            const local = { lat: -23.93021798696555, lng: -46.18466131638048 }; // São Paulo
+            const mapa = new google.maps.Map(document.getElementById("map"), {
+            zoom: 18,
+            center: local,
+            });
+            new google.maps.Marker({
+            position: local,
+            map: mapa,
+            });
+        }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNwr3hVoz7MNBd7Zq6i_1l8S2Xa4QegR4&callback=initMap" async defer
+    ></script>
+    
 </body>
 </html>
