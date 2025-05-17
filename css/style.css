@@ -207,3 +207,43 @@ footer p{
         width: 100px;
     }
 }
+
+@media screen and (max-width:700px){
+    header div{
+        display: none;
+    }
+    header ul{
+        width: 400px;
+    }
+    header ul a{
+        font-size: 18px;
+    }
+    #review>.comment{
+        left: 30px;
+    }
+}
+
+
+/*Layout pra mobile(tablet e smartphone*/
+@media screen and (max-width:600px){
+    header ul{
+        display: none;
+    }
+    #review{
+        width: 90%;
+        height: 400px;
+    }
+    article p{
+        font-size: 15px;
+        width:200px;
+    }
+    article img{
+        width: 200px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+}
