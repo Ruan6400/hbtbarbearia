@@ -88,7 +88,7 @@ section:has(>#flexdiv)>*{
 #flexdiv{
     display: flex;
     flex-wrap: wrap;
-    width: 354px;
+    width: 365px;
 }
 #flexdiv img:first-of-type{
     min-width: 120px;
