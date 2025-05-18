@@ -11,7 +11,7 @@ body{
 body *{
     color: white;
 }
-header,main,main+h2,h2+section,#map,h2:has(+table)
+header,main,main+h2,h2+section,#map,#review+nav,h2:has(+table)
 ,article,footer,body>h3{
     flex-basis: 100%;
 }
@@ -202,13 +202,40 @@ body>h3{
     top:350px
 }
 
+#review+nav{
+    text-align: center;
+}
+
+:is(header,main) button{
+    background-color: #8ff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+:is(header,main) button:hover{
+    background-color: rgb(89, 172, 172);
+    cursor: pointer;
+}
+
 footer{
     text-align: center;
 }
 footer p{
     padding: 10px;
 }
+img:is([alt*="Insta"],[alt*="Whats"]){
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.5s ease;
+}
 
+img:is([alt*="Insta"],[alt*="Whats"]):hover{
+    transform: scale(1.2);
+}
 
 @media screen and (max-width:1120px) {
     h1{
@@ -303,5 +330,10 @@ footer p{
         justify-content: center;
         border-radius: 0 0 50% 50%;
         box-shadow: 0 5px 0 8px #8ff
+    }
+
+    .profile-photo{display:none}
+    .comment{
+        height: 50px;
     }
 }
