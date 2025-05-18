@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>HBT Barbearia</title>
+    <link href="css/style.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <label for="mobile-switch" id="mobile">Botao</label>
+    <input type="checkbox" id="mobile-switch">
+    <ul id="mobile-menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Agendamento</a></li>
+        <li><a href="contato.html">Galeria</a></li>
+    </ul>
+    <header>
+        <h1>HBT Barbearia</h1>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Agendamento</a></li>
+            <li><a href="contato.html">Galeria</a></li>
+        </ul>
+        <div>
+            <button>Contato</button>
+        </div>
+    </header>
+
+
+    <main>
+        <h2>Estilo sem limite - Descubra a sua melhor versão!</h2>
+        <h3>Atitude e modernidade começam aqui!</h3>
+        <button>Agende agora</button>
+    </main>
+
+    <h2>Galeria</h2>
+    <section id="grid">
+        <img src="img/galery/Corte_1.png" alt="Imagem 1" width="250" height="400">
+        <div id="flexdiv">
+            <img src="img/galery/Corte_2.png" alt="Imagem 1" width="120" height="170">
+            <img src="img/galery/Corte_3.png" alt="Imagem 1" width="230" height="170">
+            <img src="img/galery/Corte_4.png" alt="Imagem 1" width="350" height="230">
+        </div>
+    </section>
+
+    <h2>Confira nossos serviços</h2>
+    <table>
+        <tr>
+            <td>Barba - 20min</td>
+            <td>R$20,00</td>
+        </tr>
+        <tr>
+            <td>Corte - 40min</td>
+            <td>R$35,00</td>
+        </tr>
+        <tr>
+            <td>Corte + Barba + Sombrancelha - 1h</td>
+            <td>R$20,00</td>
+        </tr>
+        <tr>
+            <td>Luzes + Corte - 1h</td>
+            <td>R$20,00</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Pézinho - 5min</td>
+            <td>R$10,00</td>
+        </tr>
+        <tr>
+            <td>Pigmentação - 30min</td>
+            <td>R$25,00</td>
+        </tr>
+        <tr>
+            <td>Platinado + Corte - 1h</td>
+            <td>R$130,00</td>
+        </tr>
+        <tr>
+            <td>Sombrancelha - 10min</td>
+            <td>R$10,00</td>
+        </tr>
+    </table>
+
+
+    <article>
+        <img src="img/barbeiro2.jpg" alt="">
+        <div>
+            <h2>Sobre nós</h2>
+            <p>
+                Na HBT Barbearia, acreditamos que cuidar do visual é mais que um serviço - é um compromisso com a autoestima . Desde 2019, nossa missão tem sido proporcionar cortes e tratamentos que refletem estilo, atitude e personalidade.  Com uma equipe especializada e um ambiente moderno, estamos aqui para ajudá-lo a descobrir sua melhor versão.
+            </p>
+        </div>
+    </article>
+    <h2>Clientes satisfeitos, experiências incríveis</h2>
+    <h3>Veja o que nossos clientes tem a dizer sobre nós</h3>
+    <section id="review">
+        <div class="comment">
+            <div class="profile-photo"></div>
+        </div>
+        <div class="comment">
+            <div class="profile-photo"></div>
+        </div>
+        <div class="comment">
+            <div class="profile-photo"></div>
+        </div>
+    </section>
+
+    <nav>
+
+        <a href="https://www.instagram.com/hbt_barbearia/">
+            <img src="img/instagram.png" alt="Link para o Instagram">
+        </a>
+        <a href="https://wa.me/5513996908252">
+            <img src="img/whatsapp.png" alt="Link para o WhatsApp">
+        </a>
+        <p>Nos siga no Instagram ou entre em contato conosco</p>
+    </nav>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            const local = { lat: -23.93021798696555, lng: -46.18466131638048 }; // São Paulo
+            const mapa = new google.maps.Map(document.getElementById("map"), {
+            zoom: 18,
+            center: local,
+            });
+            new google.maps.Marker({
+            position: local,
+            map: mapa,
+            });
+        }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNwr3hVoz7MNBd7Zq6i_1l8S2Xa4QegR4&callback=initMap" async defer
+    ></script>
+
+    <footer>
+        <p>&copy;HBT Barbearia. Todos os direitos reservados</p>
+    </footer>
+    
+</body>
+</html>
