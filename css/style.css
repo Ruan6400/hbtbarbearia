@@ -220,7 +220,7 @@ footer p{
     header ul:not(#mobile-menu){
         width: 400px;
     }
-    header li{
+    header ul:not(#mobile-menu) li{
         margin: 0 5px;
     }
 }
