@@ -16,7 +16,23 @@ header,main,main+h2,h2+section,#map,h2:has(+table)
     flex-basis: 100%;
 }
 
-
+#mobile{
+    display: none;
+    background-color: #8ff;
+    position: absolute;
+    right: 0;
+    top: 10px
+}
+#mobile-switch{
+    display: none;
+}
+#mobile-menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-color: #8ff;
+}
 header{
     background-color: #0005;
     display: flex;
@@ -27,7 +43,7 @@ header{
 header>*{
     width: 200px;
 }
-h1{
+header>h1{
     color:#0000;
     background-image: url(../img/hbt_logo.png);
     background-repeat: no-repeat;
@@ -41,17 +57,17 @@ h1{
 h2{
     text-align: center;
 }
-ul{
+ul:not(#mobile-menu){
     width: 700px;
     text-align: center;
 }
-ul>*{
+ul:not(#mobile-menu)>*{
     list-style: none;
     display: inline-block;
     margin: 0 18px;
     padding: 0;
 }
-header ul a{
+header ul:not(#mobile-menu) a{
     text-decoration: none;
     font-size: 20px;
 }
@@ -201,7 +217,7 @@ footer p{
     header div{
         width: 200px;
     }
-    header ul{
+    header ul:not(#mobile-menu){
         width: 400px;
     }
     header li{
@@ -230,10 +246,10 @@ footer p{
     #map{
         margin: 50px 10%;
     }
-    header ul{
+    header ul:not(#mobile-menu){
         width: 400px;
     }
-    header ul a{
+    header ul:not(#mobile-menu) a{
         font-size: 18px;
     }
 }
@@ -241,25 +257,38 @@ footer p{
 
 /*Layout pra mobile(tablet e smartphone*/
 @media screen and (max-width:600px){
-    header ul{
+    header ul:not(#mobile-menu){
         display: none;
     }
     #review{
         width: 90%;
         height: 400px;
     }
-    
-    /*article p{
-        font-size: 15px;
-        width:200px;
+    #mobile{
+        display: block;
     }
-    article img{
-        width: 200px;
-        height: 300px;
-    }*/
+    #mobile-switch:checked+#mobile-menu{
+        display: block;
+    }
 
 }
 
-@media screen and (max-width:600px){
-
+@media screen and (max-width:450px){
+    body{
+        background-color: white;
+        /*background-image: none;*/
+        
+        overflow-x: hidden;
+    }
+    body *{
+        color: black;
+    }
+    header{
+        background-color: #000;
+        width: 100vw;
+        height: 300px;
+        justify-content: center;
+        border-radius: 0 0 50% 50%;
+        box-shadow: 0 5px 0 8px #8ff
+    }
 }
