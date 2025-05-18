@@ -270,18 +270,31 @@ footer p{
     #mobile-switch:checked+#mobile-menu{
         display: block;
     }
+    footer{
+        background-color: #000;
+    }
+    footer p{
+        color: white;
+    }
 
 }
 
 @media screen and (max-width:450px){
     body{
         background-color: white;
-        /*background-image: none;*/
+        background-image: none;
         
         overflow-x: hidden;
     }
     body *{
         color: black;
+    }
+
+    main{
+        background-image: url(../img/barbeiro1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 200px;
     }
     header{
         background-color: #000;
