@@ -87,8 +87,9 @@ main{
     min-height: 600px;
     text-align: center;
 }
-main>button{
+main>a:has(>button){
     margin-top: 200px;
+    display: block;
 }
 main+h2{
     margin: 150px 0;
@@ -112,6 +113,12 @@ section:has(>#flexdiv)>*{
 }
 #flexdiv img:first-of-type{
     min-width: 120px;
+}
+#grid img{
+    transition: transform 0.5s ease;
+}
+#grid img:hover{
+    transform: scale(1.2);
 }
 
 
