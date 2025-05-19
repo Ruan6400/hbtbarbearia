@@ -102,6 +102,7 @@ main+h2{
 }
 #grid{
     margin-bottom: 200px;
+
 }
 section:has(>#flexdiv)>*{
     display: inline-block;
@@ -244,7 +245,13 @@ img:is([alt*="Insta"],[alt*="Whats"]){
 img:is([alt*="Insta"],[alt*="Whats"]):hover{
     transform: scale(1.2);
 }
-
+@media screen and (min-width:1120px){
+    #grid{
+        transform:scale(1.5);
+        position:relative;
+        top:100px
+    }
+}
 @media screen and (max-width:1120px) {
     h1{
         width: 200px;
