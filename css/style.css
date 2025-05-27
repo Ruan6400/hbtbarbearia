@@ -12,6 +12,7 @@ body{
 }
 body *{
     color: white;
+    font-family:Verdana;
 }
 header,main,main+h2,h2+section,#map,#review+nav,h2:has(+table)
 ,article,footer,body>h3{
