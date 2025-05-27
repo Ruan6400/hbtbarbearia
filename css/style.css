@@ -17,7 +17,9 @@ header,main,main+h2,h2+section,#map,#review+nav,h2:has(+table)
 ,article,footer,body>h3{
     flex-basis: 100%;
 }
-
+:is(h2,h3):has(~#review){
+      display:none;
+}
 #mobile{
     display: none;
     background-color: #8ff;
